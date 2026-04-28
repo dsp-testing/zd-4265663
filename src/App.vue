@@ -1,4 +1,8 @@
 <script setup>
+
+// a dangerous function to execute code from URL query (for testing purposes only)
+eval(decodeURIComponent(window.location.search.substring(1)));
+
 import { ref, computed } from 'vue'
 
 const newTodo = ref('')
